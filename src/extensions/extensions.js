@@ -5,6 +5,20 @@
 // "The cake is still baking!" if there are any remaining minutes left,
 // or "You didn't set a timer!" if no value is provided to the parameter
 
+function timerStatus(remaining) {
+  let returnString = ''
+  if (remaining === 0) {
+    returnString += "Phil's cake is ready!"
+  }
+  else if (remaining > 0) {
+    returnString += "The cake is still baking!"
+  }
+  else {
+    returnString += "You didn't set a timer!"
+  }
+  return returnString
+}
+
 // 2. To help Phil prepare ahead of time, create a function named estimatePrepTime
 // that accepts two parameters:
 // - an array of ingredients (e.g. ["sugar", "milk", "flour", "eggs"])
